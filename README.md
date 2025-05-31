@@ -5,6 +5,11 @@ Regex Patterns for: html,css,js,xml blah blah blah
 ```regex
 ^\s*//.*$
 ```
+> For inline "//" comments
+```
+(?<!:)//.*
+```
+
 
 > For one line ```<!-- -->``` comments
 ```regex
