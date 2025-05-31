@@ -9,4 +9,6 @@ Regex Patterns for: html,css,js,xml blah blah blah
 > For one line **<!-- --|>** comments without the "|"
 
 ^\s*/\*.*?\*/\s*$
+or
+^\s*/\*.*\*/\s*$
 > for One line "/* */" comments
