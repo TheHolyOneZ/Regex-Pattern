@@ -1,14 +1,33 @@
 # Regex-Pattern
 Regex Patterns for: html,css,js,xml blah blah blah
 
-
-^\s*//.*$
 > For one line "//" comments
+```regex
+^\s*//.*$
+```
 
-^\s*<!--.*$
 > For one line **<!-- --|>** comments without the "|"
+```regex
+^\s*<!--.*$
+```
 
-^\s*/\*.*?\*/\s*$
-or
-^\s*/\*.*\*/\s*$
+> For inline **<!-- --|>** comments without the "|"
+
+```regex
+<!--(?!.*\|).*?-->
+```
+
 > for One line "/* */" comments
+```
+^\s*/\*.*?\*/\s*$
+```
+or
+```
+^\s*/\*.*\*/\s*$
+```
+
+> for inline "/* */" comments
+
+```
+/\*.*?\*/
+```
