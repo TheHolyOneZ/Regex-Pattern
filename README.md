@@ -6,12 +6,12 @@ Regex Patterns for: html,css,js,xml blah blah blah
 ^\s*//.*$
 ```
 
-> For one line **<!-- --|>** comments without the "|"
+> For one line ```<!-- -->``` comments
 ```regex
 ^\s*<!--.*$
 ```
 
-> For inline **<!-- --|>** comments without the "|"
+> For inline ```<!-- -->``` comments 
 
 ```regex
 <!--(?!.*\|).*?-->
